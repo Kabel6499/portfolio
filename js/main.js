@@ -5,6 +5,22 @@
 
 'use strict';
 
+/* ================================================================
+   ACCENT COLOR — change this one value to update everything:
+   CSS variables (buttons, borders, hover…) + all tech-stack icons
+   ================================================================ */
+const ACCENT = '458ee8';
+
+function applyAccent() {
+  // Update CSS custom property on :root (overrides both dark & light theme values)
+  document.documentElement.style.setProperty('--accent', '#' + ACCENT);
+
+  // Update all simpleicons CDN image URLs to use the current accent color
+  document.querySelectorAll('img[src*="cdn.simpleicons.org"]').forEach(img => {
+    img.src = img.src.replace(/\/[0-9a-fA-F]{3,6}$/, '/' + ACCENT);
+  });
+}
+
 /* ---- Translations -------------------------------------------- */
 const translations = {
   en: {
@@ -214,7 +230,8 @@ function initFadeIns() {
 
 /* ---- Bootstrap ----------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-  /* apply saved theme first to avoid flash */
+  /* apply accent color, theme and language */
+  applyAccent();
   applyTheme(theme);
   applyLang(lang);
 

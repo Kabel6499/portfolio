@@ -47,9 +47,7 @@
          -------------------------------------------------------- -->
     <section class="hero fade-in" id="home" aria-label="Introduction">
 
-      <div class="hero-avatar"><img src="assets/avatar.jpeg" alt="Florian"></div>
-
-      <div class="hero-content">
+<div class="hero-content">
         <h1>
           <span data-en="Hi, I'm Florian" data-de="Hallo, ich bin Florian">Hallo, ich bin Florian</span>
           <span class="hero-wave" aria-hidden="true">👋</span>
