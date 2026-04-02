@@ -1,3 +1,8 @@
+# Block direct access to sensitive files
+<FilesMatch "^\.env(\.example)?$">
+  Require all denied
+</FilesMatch>
+
 RewriteEngine On
 
 # Redirect /index.php → / (canonical root)

@@ -65,7 +65,7 @@ if (mb_strlen($name) > 100 || mb_strlen($subject) > 200 || mb_strlen($message) >
 /* ================================================================
    Load configuration from /root/portfolio/.env
    ================================================================ */
-$envFile = '/root/portfolio/.env';
+$envFile = __DIR__ . '/.env';
 if (!file_exists($envFile)) {
     http_response_code(500);
     echo json_encode(['success' => false, 'message' => 'Server configuration missing.']);
