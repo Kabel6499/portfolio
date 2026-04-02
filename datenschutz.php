@@ -14,7 +14,7 @@
 <header>
   <div class="wrap">
     <div class="header-logo">
-      <a href="index.php">Florian</a>
+      <a href="/">Florian</a>
     </div>
     <div class="header-controls">
       <button class="ctrl-btn lang-btn" data-lang="de" title="Deutsch">DE</button>
@@ -28,7 +28,7 @@
 <main>
   <div class="wrap">
     <div class="page-header">
-      <a class="back-link" href="index.php">
+      <a class="back-link" href="/">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
         <span data-en="Back" data-de="Zurück">Zurück</span>
       </a>
@@ -55,7 +55,7 @@
         <h2>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h2>
         <p>
           Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten
-          können Sie dem <a href="impressum.php">Impressum</a> dieser Website entnehmen.
+          können Sie dem <a href="impressum">Impressum</a> dieser Website entnehmen.
         </p>
 
         <h2>Wie erfassen wir Ihre Daten?</h2>
@@ -122,7 +122,7 @@
         <h2>Who is responsible for data collection on this website?</h2>
         <p>
           Data processing on this website is carried out by the website operator. You can find their contact
-          details in the <a href="impressum.php">Imprint</a> section of this website.
+          details in the <a href="impressum">Imprint</a> section of this website.
         </p>
 
         <h2>How do we collect your data?</h2>
@@ -211,7 +211,7 @@
     </p>
     <ul class="footer-links">
       <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>
-      <li><a href="datenschutz.php" data-i18n="footer_privacy">Datenschutz</a></li>
+      <li><a href="datenschutz" data-i18n="footer_privacy">Datenschutz</a></li>
     </ul>
   </div>
 </footer>

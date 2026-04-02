@@ -14,7 +14,7 @@
 <header>
   <div class="wrap">
     <div class="header-logo">
-      <a href="index.php">Florian</a>
+      <a href="/">Florian</a>
     </div>
     <div class="header-controls">
       <button class="ctrl-btn lang-btn" data-lang="de" title="Deutsch">DE</button>
@@ -28,7 +28,7 @@
 <main>
   <div class="wrap">
     <div class="page-header">
-      <a class="back-link" href="index.php#contact">
+      <a class="back-link" href="/#contact">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
         <span data-en="Back" data-de="Zurück">Zurück</span>
       </a>
@@ -121,7 +121,7 @@
       Made with ♥ by Florian
     <ul class="footer-links">
       <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>
-      <li><a href="datenschutz.php" data-i18n="footer_privacy">Datenschutz</a></li>
+      <li><a href="datenschutz" data-i18n="footer_privacy">Datenschutz</a></li>
     </ul>
   </div>
 </footer>

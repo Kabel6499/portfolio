@@ -20,7 +20,7 @@ function applyAccent() {
 const translations = {
   en: {
     hero_title:         "Hi, I'm Florian",
-    hero_subtitle:      "Developer & morer",
+    hero_subtitle:      "Developer & more",
     hero_bio:           "I have made it my mission to improve people's everyday lives with the applications I develop — whether web apps, iOS apps, or shell applications.",
     hero_github:        "GitHub",
     hero_linkedin:      "LinkedIn",
@@ -60,7 +60,7 @@ const translations = {
 
   de: {
     hero_title:         "Hallo, ich bin Florian",
-    hero_subtitle:      "Developer & more",
+    hero_subtitle:      "Developer & mehr",
     hero_bio:           "Ich habe es mir zur Aufgabe gemacht mit den Anwendungen, welche ich entwickle den Alltag von Menschen zu verbessern. Dabei geht es um Web-Apps, iOS-Apps oder auch Shell Anwendungen",
     hero_github:        "GitHub",
     hero_email:         "E-Mail",
