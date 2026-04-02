@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florian – Web Developer</title>
+  <title>Florian – Portfolio</title>
   <meta name="description" content="Portfolio von Florian – Full-Stack Webentwickler aus Deutschland.">
   <meta name="author" content="Florian">
   <meta property="og:title" content="Florian – Web Developer">
@@ -47,7 +47,7 @@
          -------------------------------------------------------- -->
     <section class="hero fade-in" id="home" aria-label="Introduction">
 
-      <div class="hero-avatar" aria-hidden="true"><img src="assets/avatar.jpg" alt="Florian"></div>
+      <div class="hero-avatar" aria-hidden="true"><img src="assets/avatar.jpeg" alt="Florian"></div>
 
       <div class="hero-content">
         <h1>
@@ -55,7 +55,7 @@
           <span class="hero-wave" aria-hidden="true">👋</span>
         </h1>
 
-        <p class="hero-subtitle" data-i18n="hero_subtitle">Full-Stack Webentwickler</p>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Developer & more</p>
 
         <p class="hero-bio" data-i18n="hero_bio">
           Ich habe es mir zur Aufgabe gemacht mit den Anwendungen, welche ich entwickle den Alltag

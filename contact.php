@@ -1,11 +1,4 @@
 <?php
-/**
- * contact.php – Contact form handler
- *
- * Requires PHPMailer: composer require phpmailer/phpmailer
- *
- * ⚠️  CONFIGURE the settings in the "EMAIL CONFIGURATION" section below.
- */
 
 declare(strict_types=1);
 
@@ -70,18 +63,30 @@ if (mb_strlen($name) > 100 || mb_strlen($subject) > 200 || mb_strlen($message) >
 }
 
 /* ================================================================
-   EMAIL CONFIGURATION
-   Change these values to match your SMTP provider.
+   Load configuration from /root/portfolio/.env
    ================================================================ */
-define('SMTP_HOST',       'smtp.example.com');   // e.g. smtp.gmail.com / smtp.strato.de
-define('SMTP_USER',       'deine@email.de');     // SMTP username
-define('SMTP_PASS',       'YOUR_APP_PASSWORD');  // SMTP password / app password
-define('SMTP_PORT',       587);                  // 587 (STARTTLS) or 465 (SSL)
-define('SMTP_ENCRYPTION', PHPMailer::ENCRYPTION_STARTTLS); // or ENCRYPTION_SMTPS for port 465
+$envFile = '/root/portfolio/.env';
+if (!file_exists($envFile)) {
+    http_response_code(500);
+    echo json_encode(['success' => false, 'message' => 'Server configuration missing.']);
+    exit;
+}
+foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+    if (str_starts_with(trim($line), '#') || !str_contains($line, '=')) continue;
+    [$key, $value] = explode('=', $line, 2);
+    $_ENV[trim($key)] = trim($value);
+}
 
-define('MAIL_FROM',      'deine@email.de');      // Sender address (must match SMTP_USER for most providers)
-define('MAIL_FROM_NAME', 'Portfolio Contact');   // Sender name
-define('MAIL_TO',        'deine@email.de');      // Where you want to receive messages
+define('SMTP_HOST',       $_ENV['SMTP_HOST']       ?? '');
+define('SMTP_USER',       $_ENV['SMTP_USER']       ?? '');
+define('SMTP_PASS',       $_ENV['SMTP_PASS']       ?? '');
+define('SMTP_PORT', (int)($_ENV['SMTP_PORT']       ?? 587));
+define('SMTP_ENCRYPTION', ($_ENV['SMTP_PORT'] ?? 587) == 465
+    ? PHPMailer::ENCRYPTION_SMTPS
+    : PHPMailer::ENCRYPTION_STARTTLS);
+define('MAIL_FROM',       $_ENV['MAIL_FROM']       ?? '');
+define('MAIL_FROM_NAME',  $_ENV['MAIL_FROM_NAME']  ?? 'Portfolio Contact');
+define('MAIL_TO',         $_ENV['MAIL_TO']         ?? '');
 /* ================================================================ */
 
 /* ---- Sanitize for HTML output --------------------------------- */

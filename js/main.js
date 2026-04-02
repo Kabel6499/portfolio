@@ -9,7 +9,7 @@
 const translations = {
   en: {
     hero_title:         "Hi, I'm Florian",
-    hero_subtitle:      "Full-Stack Web Developer",
+    hero_subtitle:      "Developer & morer",
     hero_bio:           "I have made it my mission to improve people's everyday lives with the applications I develop — whether web apps, iOS apps, or shell applications.",
     hero_github:        "GitHub",
     hero_linkedin:      "LinkedIn",
@@ -42,17 +42,16 @@ const translations = {
     success_msg:        "Message sent! I'll get back to you soon. ✓",
     error_msg:          "Something went wrong. Please try again or email me directly.",
 
-    footer_copy:        "Built with care & coffee",
+    footer_copy:        "Made with <3 by Florian",
     footer_impressum:   "Imprint",
     footer_privacy:     "Privacy Policy",
   },
 
   de: {
     hero_title:         "Hallo, ich bin Florian",
-    hero_subtitle:      "Full-Stack Webentwickler",
+    hero_subtitle:      "Developer & more",
     hero_bio:           "Ich habe es mir zur Aufgabe gemacht mit den Anwendungen, welche ich entwickle den Alltag von Menschen zu verbessern. Dabei geht es um Web-Apps, iOS-Apps oder auch Shell Anwendungen",
     hero_github:        "GitHub",
-    hero_linkedin:      "LinkedIn",
     hero_email:         "E-Mail",
     hero_cv:            "CV herunterladen",
 
@@ -82,7 +81,7 @@ const translations = {
     success_msg:        "Nachricht gesendet! Ich melde mich bald bei dir. ✓",
     error_msg:          "Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreib mir direkt eine E-Mail.",
 
-    footer_copy:        "Mit Sorgfalt & Kaffee gebaut",
+    footer_copy:        "Made with <3 by Florian",
     footer_impressum:   "Impressum",
     footer_privacy:     "Datenschutz",
   }
