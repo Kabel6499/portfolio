@@ -6,9 +6,6 @@
   <title>Florian – Portfolio</title>
   <meta name="description" content="Portfolio von Florian – Full-Stack Webentwickler aus Deutschland.">
   <meta name="author" content="Florian">
-  <meta property="og:title" content="Florian – Web Developer">
-  <meta property="og:description" content="Full-Stack Webentwickler – saubere, performante Webanwendungen.">
-  <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/style.css">
   <!-- Minimal inline favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
@@ -279,8 +276,8 @@
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/raspberrypi/A22846" alt="Raspberry Pi" width="30" height="30" loading="lazy">
-          <span class="tech-name">Raspberry Pi</span>
+          <img src="https://cdn.simpleicons.org/xCode/147EFB" alt="xCode" width="30" height="30" loading="lazy">
+          <span class="tech-name">xCode</span>
         </div>
 
       </div><!-- /tech-grid -->
