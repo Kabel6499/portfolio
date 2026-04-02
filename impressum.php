@@ -52,7 +52,11 @@
         <h2>Kontakt</h2>
         <p>
           E-Mail: <a href="mailto:florian@kabel6499.de">florian@kabel6499.de</a><br>
-          <!-- Telefon: +49 (0) XXX XXXXXXX -->
+          Kontaktformular: <a href="https://kabel6499.de/kontakt">kabel6499.de/kontakt</a>
+        </p>
+        <p>
+          Ein Kontaktformular gilt durch ein Urteil des EuGH aus dem Jahr 2008 als ausreichende
+          Kontaktmöglichkeit gemäß § 5 Abs. 2 DDG.
         </p>
 
         <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
@@ -90,7 +94,12 @@
 
         <h2>Contact</h2>
         <p>
-          Email: <a href="mailto:florian@kabel6499.de">florian@kabel6499.de</a>
+          Email: <a href="mailto:florian@kabel6499.de">florian@kabel6499.de</a><br>
+          Contact form: <a href="https://kabel6499.de/kontakt">kabel6499.de/kontakt</a>
+        </p>
+        <p>
+          A contact form has been recognised by a 2008 ECJ ruling as a sufficient means of contact
+          pursuant to § 5 para. 2 DDG.
         </p>
 
         <h2>Responsible for content pursuant to § 18 para. 2 MStV</h2>
