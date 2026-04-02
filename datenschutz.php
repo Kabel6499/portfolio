@@ -75,58 +75,7 @@
           Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
         </p>
 
-        <h2>Welche Rechte haben Sie bezüglich Ihrer Daten?</h2>
-        <p>Sie haben jederzeit das Recht:</p>
-        <ul>
-          <li>Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten</li>
-          <li>die Berichtigung oder Löschung dieser Daten zu verlangen</li>
-          <li>die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen</li>
-          <li>der Verarbeitung zu widersprechen</li>
-          <li>Datenübertragbarkeit zu fordern</li>
-          <li>Beschwerde bei der zuständigen Aufsichtsbehörde einzureichen</li>
-        </ul>
-
-        <h2>2. Hosting</h2>
-        <p>
-          Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten,
-          die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann
-          es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten,
-          Kontaktdaten, Namen, Websitezugriffe und sonstige Daten handeln.
-        </p>
-        <p>
-          Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und
-          bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und
-          effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter
-          (Art. 6 Abs. 1 lit. f DSGVO).
-        </p>
-
-        <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
-
-        <h2>Datenschutz</h2>
-        <p>
-          Der Betreiber dieser Seiten nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln
-          Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften
-          sowie dieser Datenschutzerklärung.
-        </p>
-
-        <h2>Verantwortliche Stelle</h2>
-        <p>
-          Florian [NACHNAME]<br>
-          [STRASSE UND HAUSNUMMER]<br>
-          [PLZ] [STADT]<br>
-          E-Mail: <a href="mailto:deine@email.de">deine@email.de</a>
-        </p>
-
-        <h2>Speicherdauer</h2>
-        <p>
-          Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben
-          Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein
-          berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen,
-          werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung
-          Ihrer personenbezogenen Daten haben.
-        </p>
-
-        <h2>4. Datenerfassung auf dieser Website</h2>
+        <h2>Datenerfassung auf dieser Website</h2>
 
         <h2>Kontaktformular</h2>
         <p>
@@ -258,9 +207,7 @@
 <footer>
   <div class="wrap">
     <p class="footer-copy">
-      Made with ♥ by Florian &nbsp;&middot;&nbsp;
-      <img src="https://cdn.simpleicons.org/visualstudiocode/007acc" alt="VS Code" width="13" height="13" style="display:inline;vertical-align:middle;margin-top:-2px">
-      VS Code
+      Made with <3 by Florian
     </p>
     <ul class="footer-links">
       <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>

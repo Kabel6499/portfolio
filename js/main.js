@@ -10,7 +10,7 @@ const translations = {
   en: {
     hero_title:         "Hi, I'm Florian",
     hero_subtitle:      "Full-Stack Web Developer",
-    hero_bio:           "I build clean, performant web applications — from concept to deployment. Based in Germany, open to freelance projects and collaborations.",
+    hero_bio:           "I have made it my mission to improve people's everyday lives with the applications I develop — whether web apps, iOS apps, or shell applications.",
     hero_github:        "GitHub",
     hero_linkedin:      "LinkedIn",
     hero_email:         "Email",
@@ -24,7 +24,7 @@ const translations = {
     project_gh:         "GitHub",
     project_live:       "Live Preview",
 
-    contact_intro:      "Interested in working together or have a question? Feel free to reach out — I usually respond within 24 hours.",
+    contact_intro:      "Do you have a question or want to reach me about one of my projects? You can do that right here.",
     contact_form_title: "Send a message",
 
     label_name:         "Name",
@@ -50,7 +50,7 @@ const translations = {
   de: {
     hero_title:         "Hallo, ich bin Florian",
     hero_subtitle:      "Full-Stack Webentwickler",
-    hero_bio:           "Ich entwickle saubere, performante Webanwendungen — vom Konzept bis zum Deployment. Ansässig in Deutschland, offen für Freelance-Projekte und Kooperationen.",
+    hero_bio:           "Ich habe es mir zur Aufgabe gemacht mit den Anwendungen, welche ich entwickle den Alltag von Menschen zu verbessern. Dabei geht es um Web-Apps, iOS-Apps oder auch Shell Anwendungen",
     hero_github:        "GitHub",
     hero_linkedin:      "LinkedIn",
     hero_email:         "E-Mail",
@@ -64,7 +64,7 @@ const translations = {
     project_gh:         "GitHub",
     project_live:       "Live-Vorschau",
 
-    contact_intro:      "Interesse an einer Zusammenarbeit oder eine Frage? Schreib mir gerne — ich antworte in der Regel innerhalb von 24 Stunden.",
+    contact_intro:      "Du hast eine Frage an mich oder möchtest mich wegen einer meiner Projekte kontaktieren, dann kannst du das hier tun",
     contact_form_title: "Nachricht senden",
 
     label_name:         "Name",
