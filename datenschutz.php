@@ -113,8 +113,8 @@
 
         <h2>General Information</h2>
         <p>
-          The following information provides a simple overview of what happens to your personal data when you
-          visit this website. Personal data is any data that can be used to personally identify you.
+          The following notes provide a simple overview of what happens to your personal data when you visit
+          this website. Personal data is any data by which you can be personally identified.
         </p>
 
         <h2>Data Collection on this Website</h2>
@@ -122,80 +122,50 @@
         <h2>Who is responsible for data collection on this website?</h2>
         <p>
           Data processing on this website is carried out by the website operator. You can find their contact
-          details in the <a href="impressum">Imprint</a> section of this website.
+          details in the <a href="impressum">Imprint</a> of this website.
         </p>
 
         <h2>How do we collect your data?</h2>
         <p>
-          Your data is collected partly by you providing it to us — for example, data you enter into a
-          contact form.
+          Your data is collected partly because you provide it to us. This may include, for example, data
+          you enter into a contact form.
         </p>
         <p>
-          Other data is automatically collected by our IT systems when you visit the website. This mainly
-          includes technical data (e.g., browser, operating system, or time of the page request).
+          Other data is collected automatically or with your consent when you visit the website by our IT
+          systems. This is primarily technical data (e.g. web browser, operating system or time of page visit).
         </p>
 
         <h2>What do we use your data for?</h2>
         <p>
-          Some of the data is collected to ensure error-free provision of the website. Other data may be used
-          to analyze your user behavior.
+          Some of the data is collected to ensure error-free operation of the website. Other data may be used
+          to analyse your user behaviour.
         </p>
 
-        <h2>What rights do you have regarding your data?</h2>
-        <p>You have the right at any time to:</p>
-        <ul>
-          <li>Receive information about the origin, recipients, and purpose of your stored personal data</li>
-          <li>Request the correction or deletion of this data</li>
-          <li>Request a restriction on the processing of your personal data</li>
-          <li>Object to this processing</li>
-          <li>Request data portability</li>
-          <li>File a complaint with the competent supervisory authority</li>
-        </ul>
-
-        <h2>2. Hosting</h2>
-        <p>
-          This website is hosted by an external service provider. Personal data collected on this website is
-          stored on the host's servers. This may include IP addresses, contact requests, meta and
-          communication data, contract data, contact details, names, website access data, and other data.
-        </p>
-
-        <h2>3. General Information and Mandatory Information</h2>
-
-        <h2>Privacy</h2>
-        <p>
-          The operator of these pages takes the protection of your personal data very seriously. We treat your
-          personal data confidentially and in accordance with the statutory data protection regulations and
-          this privacy policy.
-        </p>
-
-        <h2>Controller</h2>
-        <p>
-          Florian [LAST NAME]<br>
-          [STREET AND NUMBER]<br>
-          [ZIP CODE] [CITY]<br>
-          Email: <a href="mailto:deine@email.de">deine@email.de</a>
-        </p>
-
-        <h2>4. Data Collection on this Website</h2>
+        <h2>Data Collection on this Website</h2>
 
         <h2>Contact Form</h2>
         <p>
-          If you send us inquiries via the contact form, your information from the inquiry form including the
-          contact details you provided will be stored by us for the purpose of processing the inquiry and in
-          case of follow-up questions. We do not share this data without your consent.
+          If you send us enquiries via the contact form, your details from the enquiry form, including the
+          contact details you provide there, will be stored by us for the purpose of processing the enquiry
+          and in case of follow-up questions. We do not pass on this data without your consent.
         </p>
         <p>
           The processing of this data is based on Art. 6 para. 1 lit. b GDPR, if your request is related to
-          the performance of a contract or is necessary to carry out pre-contractual measures. In all other
-          cases, processing is based on our legitimate interest in the effective handling of requests addressed
-          to us (Art. 6 para. 1 lit. f GDPR).
+          the fulfilment of a contract or is necessary for the implementation of pre-contractual measures. In
+          all other cases, the processing is based on our legitimate interest in the effective handling of
+          requests addressed to us (Art. 6 para. 1 lit. f GDPR).
+        </p>
+        <p>
+          The data you enter in the contact form will remain with us until you ask us to delete it, revoke
+          your consent to storage, or the purpose for data storage no longer applies. Mandatory legal
+          provisions — in particular retention periods — remain unaffected.
         </p>
 
         <h2>Cookies and Local Storage</h2>
         <p>
           This website does not use tracking or analytics cookies. Only technically necessary settings
-          (chosen language, chosen color scheme) are stored in your browser's local storage. This data does
-          not leave your device and is used solely to improve your user experience.
+          (selected language, selected colour scheme) are stored in your browser's local storage. This data
+          does not leave your device and is used solely to improve your user experience.
         </p>
       </div>
 
@@ -210,7 +180,7 @@
       Made with <3 by Florian
     </p>
     <ul class="footer-links">
-      <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>
+      <li><a href="https://kabel6499.de/impressum" data-i18n="footer_impressum">Impressum</a></li>
       <li><a href="datenschutz" data-i18n="footer_privacy">Datenschutz</a></li>
     </ul>
   </div>

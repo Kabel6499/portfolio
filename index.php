@@ -296,7 +296,7 @@
       Made with <3 by Florian
     </p>
     <ul class="footer-links">
-      <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>
+      <li><a href="https://kabel6499.de/impressum" data-i18n="footer_impressum">Impressum</a></li>
       <li><a href="datenschutz" data-i18n="footer_privacy">Datenschutz</a></li>
     </ul>
   </div>

@@ -80,54 +80,40 @@
            ENGLISH VERSION (en) – hidden by default, shown by JS
            ====================================================== -->
       <div id="content-en" style="display:none">
-        <h2>Information pursuant to § 5 TMG (German Telemedia Act)</h2>
+        <h2>Information pursuant to § 5 DDG</h2>
         <p>
-          Florian [LAST NAME]<br>
-          [STREET AND NUMBER]<br>
-          [ZIP CODE] [CITY]<br>
+          Florian Rogosch<br>
+          Heugarten 12<br>
+          58093 Hagen<br>
           Germany
         </p>
 
         <h2>Contact</h2>
         <p>
-          Email: <a href="mailto:deine@email.de">deine@email.de</a>
+          Email: <a href="mailto:florian@kabel6499.de">florian@kabel6499.de</a>
         </p>
 
-        <h2>Responsible for content pursuant to § 55 para. 2 RStV</h2>
+        <h2>Responsible for content pursuant to § 18 para. 2 MStV</h2>
         <p>
-          Florian [LAST NAME]<br>
-          [STREET AND NUMBER]<br>
-          [ZIP CODE] [CITY]
+          Florian Rogosch<br>
+          Heugarten 12<br>
+          58093 Hagen<br>
+          Germany
         </p>
 
         <h2>Disclaimer</h2>
 
         <h2>Liability for Content</h2>
         <p>
-          As a service provider, we are responsible for our own content on these pages in accordance with
-          § 7 para. 1 TMG. However, according to §§ 8 to 10 TMG, we are not obligated as a service provider
-          to monitor transmitted or stored third-party information or to research circumstances that indicate
-          illegal activity.
-        </p>
-        <p>
-          Obligations to remove or block the use of information under general laws remain unaffected. However,
-          liability in this regard is only possible from the point in time at which a concrete infringement of
-          the law becomes known. Upon becoming aware of corresponding infringements, we will immediately remove
-          this content.
+          The contents of this website have been created with the utmost care. However, we cannot guarantee
+          the accuracy, completeness or timeliness of the content.
         </p>
 
         <h2>Liability for Links</h2>
         <p>
-          Our offer contains links to external websites of third parties, on whose contents we have no influence.
-          Therefore, we cannot assume any liability for these external contents. The respective provider or
-          operator of the pages is always responsible for the contents of the linked pages.
-        </p>
-
-        <h2>Copyright</h2>
-        <p>
-          The content and works created by the site operators on these pages are subject to German copyright law.
-          Duplication, processing, distribution, or any form of commercialization of such material beyond the
-          scope of the copyright law shall require the prior written consent of its respective author.
+          This website contains links to external third-party websites over whose content we have no influence.
+          We therefore cannot accept any liability for this external content. The respective provider or operator
+          of the linked pages is always responsible for their content.
         </p>
       </div>
 
@@ -142,7 +128,7 @@
       Made with <3 by Florian
     </p>
     <ul class="footer-links">
-      <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>
+      <li><a href="https://kabel6499.de/impressum" data-i18n="footer_impressum">Impressum</a></li>
       <li><a href="datenschutz" data-i18n="footer_privacy">Datenschutz</a></li>
     </ul>
   </div>
