@@ -34,7 +34,7 @@ const translations = {
     project_gh:         "GitHub",
     project_live:       "Live Preview",
 
-    contact_intro:      "Do you have a question or want to reach me about one of my projects? You can do that right here.",
+    contact_intro:      "Do you have a question or want to reach me about one of my projects? You can do that right here!",
     contact_form_title: "Send a message",
 
     label_name:         "Name",
@@ -73,7 +73,7 @@ const translations = {
     project_gh:         "GitHub",
     project_live:       "Live-Vorschau",
 
-    contact_intro:      "Du hast eine Frage an mich oder möchtest mich wegen einer meiner Projekte kontaktieren, dann kannst du das hier tun",
+    contact_intro:      "Du hast eine Frage an mich oder möchtest mich wegen einer meiner Projekte kontaktieren, dann kannst du das hier tun!",
     contact_form_title: "Nachricht senden",
 
     label_name:         "Name",

@@ -37,7 +37,7 @@
 
     <!-- Intro -->
     <p class="contact-intro" style="margin-bottom:2rem;" data-i18n="contact_intro">
-      Du hast eine Frage an mich oder möchtest mich wegen einer meiner Projekte kontaktieren, dann kannst du das hier tun
+      Du hast eine Frage an mich oder möchtest mich wegen einer meiner Projekte kontaktieren, dann kannst du das hier tun!
     </p>
 
     <!-- Contact form -->
@@ -118,7 +118,7 @@
 <footer>
   <div class="wrap">
     <p class="footer-copy">
-      Made with ♥ by Florian
+      Made with <3 by Florian
     <ul class="footer-links">
       <li><a href="https://kabel6499.de/impressum" data-i18n="footer_impressum">Impressum</a></li>
       <li><a href="datenschutz" data-i18n="footer_privacy">Datenschutz</a></li>
