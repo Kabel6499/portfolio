@@ -259,12 +259,12 @@
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/bash/458ee8" alt="Wordpress" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/wordpress/458ee8" alt="Wordpress" width="30" height="30" loading="lazy">
           <span class="tech-name">Wordpress</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/Wordpress/458ee8" alt="BAsh" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/gnubash/458ee8" alt="BAsh" width="30" height="30" loading="lazy">
           <span class="tech-name">Bash</span>
         </div>
 
