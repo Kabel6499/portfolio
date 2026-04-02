@@ -212,72 +212,72 @@
         <!-- Using Simple Icons CDN: https://simpleicons.org -->
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/python/458ee8" alt="Python" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="30" height="30" loading="lazy">
           <span class="tech-name">Python</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/mariadb/458ee8" alt="MariaDB" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/mariadb/C0765A" alt="MariaDB" width="30" height="30" loading="lazy">
           <span class="tech-name">MariaDB</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/nodedotjs/458ee8" alt="Node.js" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" width="30" height="30" loading="lazy">
           <span class="tech-name">Node.js</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/mysql/458ee8" alt="MySQL" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" width="30" height="30" loading="lazy">
           <span class="tech-name">MySQL</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/ubuntu/458ee8" alt="Ubuntu" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/ubuntu/E95420" alt="Ubuntu" width="30" height="30" loading="lazy">
           <span class="tech-name">Ubuntu</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/git/458ee8" alt="Git" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="30" height="30" loading="lazy">
           <span class="tech-name">Git</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/github/458ee8" alt="GitHub" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/github/e6edf3" alt="GitHub" width="30" height="30" loading="lazy">
           <span class="tech-name">GitHub</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/insomnia/458ee8" alt="MariaDB" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/insomnia/4000BF" alt="Insomnia" width="30" height="30" loading="lazy">
           <span class="tech-name">Insomnia</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/Termius/458ee8" alt="Termius" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/termius/3D8AF7" alt="Termius" width="30" height="30" loading="lazy">
           <span class="tech-name">Termius</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/wordpress/458ee8" alt="Wordpress" width="30" height="30" loading="lazy">
-          <span class="tech-name">Wordpress</span>
+          <img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress" width="30" height="30" loading="lazy">
+          <span class="tech-name">WordPress</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/gnubash/458ee8" alt="BAsh" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/gnubash/4EAA25" alt="Bash" width="30" height="30" loading="lazy">
           <span class="tech-name">Bash</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/docker/458ee8" alt="Docker" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="30" height="30" loading="lazy">
           <span class="tech-name">Docker</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/linux/458ee8" alt="Linux" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" width="30" height="30" loading="lazy">
           <span class="tech-name">Linux</span>
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/raspberrypi/458ee8" alt="Raspberry Pi" width="30" height="30" loading="lazy">
+          <img src="https://cdn.simpleicons.org/raspberrypi/A22846" alt="Raspberry Pi" width="30" height="30" loading="lazy">
           <span class="tech-name">Raspberry Pi</span>
         </div>
 
