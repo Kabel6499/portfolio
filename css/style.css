@@ -621,6 +621,20 @@ footer .wrap {
   transform: translateY(0);
 }
 
+/* ---- Light mode overrides ---- */
+[data-theme="light"] .tech-item {
+  background: #dce4f0;
+  border-color: #c8d4e8;
+}
+
+[data-theme="light"] .tech-item:hover {
+  background: #ccd7eb;
+}
+
+[data-theme="light"] img[alt="GitHub"] {
+  filter: invert(1) brightness(0);
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 640px) {
   html { font-size: 15px; }

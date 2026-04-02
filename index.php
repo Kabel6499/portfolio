@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Florian – Portfolio</title>
-  <meta name="description" content="Portfolio von Florian – Full-Stack Webentwickler aus Deutschland.">
+  <meta name="description" content="Portfolio - Florian">
   <meta name="author" content="Florian">
   <link rel="stylesheet" href="css/style.css">
   <!-- Minimal inline favicon -->
@@ -54,7 +54,7 @@
 
         <p class="hero-bio" data-i18n="hero_bio">
           Ich habe es mir zur Aufgabe gemacht mit den Anwendungen, welche ich entwickle den Alltag
-          von Menschen zu verbessern. Dabei geht es um Web-Apps, iOS-Apps oder auch Shell Anwendungen
+          von Menschen zu verbessern. Dabei geht es um Web-Apps, iOS-Apps oder auch Shell-Anwendungen
         </p>
 
         <div class="hero-links">
