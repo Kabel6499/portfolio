@@ -47,7 +47,7 @@
          -------------------------------------------------------- -->
     <section class="hero fade-in" id="home" aria-label="Introduction">
 
-      <div class="hero-avatar" aria-hidden="true"><img src="assets/avatar.jpeg" alt="Florian"></div>
+      <div class="hero-avatar"><img src="assets/avatar.jpeg" alt="Florian"></div>
 
       <div class="hero-content">
         <h1>
@@ -279,8 +279,8 @@
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/aftereffects/458ee8" alt="After Effects" width="30" height="30" loading="lazy">
-          <span class="tech-name">After Effects</span>
+          <img src="https://cdn.simpleicons.org/raspberrypi/458ee8" alt="Raspberry Pi" width="30" height="30" loading="lazy">
+          <span class="tech-name">Raspberry Pi</span>
         </div>
 
       </div><!-- /tech-grid -->
