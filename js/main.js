@@ -21,9 +21,8 @@ const translations = {
   en: {
     hero_title:         "Hi, I'm Florian",
     hero_subtitle:      "Developer & more",
-    hero_bio:           "I have made it my mission to improve people's
-    hero_github:        "GitHub", everyday lives with the applications I develop — whether web apps, iOS apps, or shell applications.",
-    hero_linkedin:      "LinkedIn",
+    hero_bio:           "I have made it my mission to improve people's everyday lives with the applications I develop — whether web apps, iOS apps, or shell applications.",
+    hero_github:        "GitHub",
     hero_email:         "Email",
     hero_cv:            "Download CV",
 
