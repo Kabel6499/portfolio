@@ -276,8 +276,8 @@
         </div>
 
         <div class="tech-item">
-          <img src="https://cdn.simpleicons.org/xCode/147EFB" alt="xCode" width="30" height="30" loading="lazy">
-          <span class="tech-name">xCode</span>
+          <img src="https://cdn.simpleicons.org/Xcode/147EFB" alt="xCode" width="30" height="30" loading="lazy">
+          <span class="tech-name">Xcode</span>
         </div>
 
       </div><!-- /tech-grid -->
