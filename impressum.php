@@ -156,9 +156,13 @@
 <!-- Footer -->
 <footer>
   <div class="wrap">
-    <p class="footer-copy" data-i18n="footer_copy">Mit Sorgfalt &amp; Kaffee gebaut</p>
+    <p class="footer-copy">
+      Made with ♥ by Florian &nbsp;&middot;&nbsp;
+      <img src="https://cdn.simpleicons.org/visualstudiocode/007acc" alt="VS Code" width="13" height="13" style="display:inline;vertical-align:middle;margin-top:-2px">
+      VS Code
+    </p>
     <ul class="footer-links">
-      <li><a href="impressum.php" data-i18n="footer_impressum">Impressum</a></li>
+      <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>
       <li><a href="datenschutz.php" data-i18n="footer_privacy">Datenschutz</a></li>
     </ul>
   </div>

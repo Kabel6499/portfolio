@@ -70,23 +70,12 @@
             <span data-i18n="hero_github">GitHub</span>
           </a>
 
-          <!-- LinkedIn -->
-          <a class="hero-link" href="https://linkedin.com/in/DEIN-PROFIL" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            <span data-i18n="hero_linkedin">LinkedIn</span>
-          </a>
-
           <!-- Email -->
           <a class="hero-link" href="mailto:deine@email.de">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span data-i18n="hero_email">E-Mail</span>
           </a>
 
-          <!-- CV download (optional) -->
-          <a class="hero-link" href="assets/cv.pdf" download>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            <span data-i18n="hero_cv">CV herunterladen</span>
-          </a>
         </div>
       </div>
     </section>
@@ -367,7 +356,6 @@
         Interesse an einer Zusammenarbeit oder eine Frage? Schreib mir gerne — ich antworte in der Regel innerhalb von 24 Stunden.
       </p>
 
-      <!-- Quick links -->
       <ul class="contact-socials">
         <li>
           <a href="mailto:deine@email.de">
@@ -381,85 +369,12 @@
             GitHub
           </a>
         </li>
-        <li>
-          <a href="https://linkedin.com/in/DEIN-PROFIL" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-        </li>
       </ul>
 
-      <!-- Contact form -->
-      <div class="contact-form-wrap">
-        <h3 data-i18n="contact_form_title">Nachricht senden</h3>
-        <div id="form-alert" class="form-alert" role="alert" aria-live="polite"></div>
-
-        <form class="form" id="contact-form" novalidate>
-          <!-- Honeypot spam protection -->
-          <div class="hp-field" aria-hidden="true">
-            <input type="text" name="website" tabindex="-1" autocomplete="off">
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="name" data-i18n="label_name">Name</label>
-              <input
-                class="form-input"
-                type="text"
-                id="name"
-                name="name"
-                required
-                autocomplete="name"
-                data-ph="ph_name"
-                placeholder="Dein Name"
-              >
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="email" data-i18n="label_email">E-Mail</label>
-              <input
-                class="form-input"
-                type="email"
-                id="email"
-                name="email"
-                required
-                autocomplete="email"
-                data-ph="ph_email"
-                placeholder="deine@email.de"
-              >
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="subject" data-i18n="label_subject">Betreff</label>
-            <input
-              class="form-input"
-              type="text"
-              id="subject"
-              name="subject"
-              required
-              data-ph="ph_subject"
-              placeholder="Worum geht es?"
-            >
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="message" data-i18n="label_message">Nachricht</label>
-            <textarea
-              class="form-input form-textarea"
-              id="message"
-              name="message"
-              required
-              data-ph="ph_message"
-              placeholder="Deine Nachricht…"
-            ></textarea>
-          </div>
-
-          <button class="btn-submit" type="submit">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            <span data-i18n="btn_send">Nachricht senden</span>
-          </button>
-        </form>
-      </div>
+      <a class="btn-action" href="kontakt.php" style="display:inline-flex;margin-top:0.5rem;font-size:0.9em;padding:0.55rem 1.2rem;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <span data-en="Open contact form" data-de="Kontaktformular öffnen">Kontaktformular öffnen</span>
+      </a>
     </section>
 
   </div><!-- /wrap -->
@@ -470,9 +385,13 @@
      ============================================================ -->
 <footer>
   <div class="wrap">
-    <p class="footer-copy" data-i18n="footer_copy">Mit Sorgfalt &amp; Kaffee gebaut</p>
+    <p class="footer-copy">
+      Made with ♥ by Florian &nbsp;&middot;&nbsp;
+      <img src="https://cdn.simpleicons.org/visualstudiocode/007acc" alt="VS Code" width="13" height="13" style="display:inline;vertical-align:middle;margin-top:-2px">
+      VS Code
+    </p>
     <ul class="footer-links">
-      <li><a href="impressum.php" data-i18n="footer_impressum">Impressum</a></li>
+      <li><a href="https://kabel6499.de/impressum" target="_blank" rel="noopener noreferrer" data-i18n="footer_impressum">Impressum</a></li>
       <li><a href="datenschutz.php" data-i18n="footer_privacy">Datenschutz</a></li>
     </ul>
   </div>
