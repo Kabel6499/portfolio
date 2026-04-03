@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 $contactApiBearer = '';
-$envFile = __DIR__ . '/.env';
+$envFile = '/root/portfolio/.env';
 
 if (file_exists($envFile)) {
   foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {

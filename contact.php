@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 
-$envFile = __DIR__ . '/.env';
+$envFile = '/root/portfolio/.env';
 $env = loadEnvFile($envFile);
 if ($env === []) {
   http_response_code(500);
