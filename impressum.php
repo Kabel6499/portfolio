@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- Header -->
+
 <header>
   <div class="wrap">
     <div class="header-logo">
@@ -37,9 +37,7 @@
 
     <div class="page-content">
 
-      <!-- ======================================================
-           GERMAN VERSION (de)
-           ====================================================== -->
+      
       <div id="content-de">
         <h2>Angaben gemäß § 5 DDG</h2>
         <p>
@@ -80,9 +78,7 @@
         </p>
       </div>
 
-      <!-- ======================================================
-           ENGLISH VERSION (en) – hidden by default, shown by JS
-           ====================================================== -->
+      
       <div id="content-en" style="display:none">
         <h2>Information pursuant to § 5 DDG</h2>
         <p>
@@ -126,11 +122,11 @@
         </p>
       </div>
 
-    </div><!-- /page-content -->
-  </div><!-- /wrap -->
+    </div>
+  </div>
 </main>
 
-<!-- Footer -->
+
 <footer>
   <div class="wrap">
     <p class="footer-copy">
@@ -145,7 +141,6 @@
 
 <script src="js/main.js"></script>
 <script>
-  // Toggle DE/EN content blocks on this page
   document.addEventListener('DOMContentLoaded', () => {
     function updatePageContent() {
       const l = localStorage.getItem('lang') || 'de';
@@ -156,7 +151,6 @@
       en.style.display = l === 'en' ? '' : 'none';
     }
     updatePageContent();
-    // Re-run when language buttons are clicked
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', () => setTimeout(updatePageContent, 10));
     });

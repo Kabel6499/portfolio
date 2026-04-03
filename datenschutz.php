@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!-- Header -->
+
 <header>
   <div class="wrap">
     <div class="header-logo">
@@ -37,9 +37,7 @@
 
     <div class="page-content">
 
-      <!-- ======================================================
-           GERMAN VERSION
-           ====================================================== -->
+      
       <div id="content-de">
         <h2>1. Datenschutz auf einen Blick</h2>
 
@@ -105,9 +103,7 @@
         </p>
       </div>
 
-      <!-- ======================================================
-           ENGLISH VERSION
-           ====================================================== -->
+      
       <div id="content-en" style="display:none">
         <h2>1. Privacy at a Glance</h2>
 
@@ -169,11 +165,11 @@
         </p>
       </div>
 
-    </div><!-- /page-content -->
-  </div><!-- /wrap -->
+    </div>
+  </div>
 </main>
 
-<!-- Footer -->
+
 <footer>
   <div class="wrap">
     <p class="footer-copy">

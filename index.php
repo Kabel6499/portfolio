@@ -7,41 +7,35 @@
   <meta name="description" content="Portfolio - Florian">
   <meta name="author" content="Florian">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Minimal inline favicon -->
+  
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 </head>
 <body>
 
-<!-- ============================================================
-     HEADER
-     ============================================================ -->
+
 <header>
   <div class="wrap">
     <div class="header-logo">
       <a href="#home">Florian</a>
     </div>
     <div class="header-controls">
-      <!-- Language toggle -->
+      
       <button class="ctrl-btn lang-btn" data-lang="de" title="Deutsch">DE</button>
       <button class="ctrl-btn lang-btn" data-lang="en" title="English">EN</button>
 
       <div class="ctrl-sep" aria-hidden="true"></div>
 
-      <!-- Theme toggle (populated by JS) -->
+      
       <button class="ctrl-btn" id="theme-btn" aria-label="Toggle theme"></button>
     </div>
   </div>
 </header>
 
-<!-- ============================================================
-     MAIN
-     ============================================================ -->
+
 <main>
   <div class="wrap">
 
-    <!-- --------------------------------------------------------
-         HERO
-         -------------------------------------------------------- -->
+    
     <section class="hero fade-in" id="home" aria-label="Introduction">
 
 <div class="hero-content">
@@ -58,13 +52,13 @@
         </p>
 
         <div class="hero-links">
-          <!-- GitHub -->
+          
           <a class="hero-link" href="https://github.com/Kabel6499" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
             <span data-i18n="hero_github">GitHub</span>
           </a>
 
-          <!-- Email -->
+          
           <a class="hero-link" href="mailto:florian@kabel6499.de">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span data-i18n="hero_email">E-Mail</span>
@@ -74,9 +68,7 @@
       </div>
     </section>
 
-    <!-- --------------------------------------------------------
-         PROJECTS
-         -------------------------------------------------------- -->
+    
     <section id="projects" class="fade-in" aria-label="Projects">
       <p class="section-label" data-i18n="section_projects">Projekte</p>
 
@@ -84,7 +76,7 @@
 
 
 
-        <!-- Project 1 -->
+        
         <div class="project-card">
           <button class="project-trigger" onclick="toggleProject(this.closest('.project-card'))" aria-expanded="false">
             <div class="project-info">
@@ -120,7 +112,7 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        
         <div class="project-card">
           <button class="project-trigger" onclick="toggleProject(this.closest('.project-card'))" aria-expanded="false">
             <div class="project-info">
@@ -160,7 +152,7 @@
           </div>
         </div>
 
-                <!-- Project 3 -->
+                
         <div class="project-card">
           <button class="project-trigger" onclick="toggleProject(this.closest('.project-card'))" aria-expanded="false">
             <div class="project-info">
@@ -198,17 +190,15 @@
             </div>
           </div>
         </div>
-      </div><!-- /projects-list -->
+      </div>
     </section>
 
-    <!-- --------------------------------------------------------
-         TECH STACK
-         -------------------------------------------------------- -->
+    
     <section id="stack" class="fade-in" aria-label="Tech Stack">
       <p class="section-label" data-i18n="section_stack">Tech Stack</p>
 
       <div class="tech-grid">
-        <!-- Using Simple Icons CDN: https://simpleicons.org -->
+        
 
         <div class="tech-item">
           <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="30" height="30" loading="lazy">
@@ -280,13 +270,11 @@
           <span class="tech-name">Xcode</span>
         </div>
 
-      </div><!-- /tech-grid -->
+      </div>
     </section>
 
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
+
 <footer>
   <div class="wrap">
     <p class="footer-copy">

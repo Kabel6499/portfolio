@@ -1,3 +1,34 @@
+<?php
+declare(strict_types=1);
+
+$contactApiBearer = '';
+$envFile = __DIR__ . '/.env';
+
+if (file_exists($envFile)) {
+  foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+    $line = trim($line);
+    if ($line === '' || str_starts_with($line, '#') || !str_contains($line, '=')) {
+      continue;
+    }
+
+    [$key, $value] = explode('=', $line, 2);
+    if (trim($key) !== 'CONTACT_API_BEARER') {
+      continue;
+    }
+
+    $value = trim($value);
+    if (
+      (str_starts_with($value, '"') && str_ends_with($value, '"')) ||
+      (str_starts_with($value, "'") && str_ends_with($value, "'"))
+    ) {
+      $value = substr($value, 1, -1);
+    }
+
+    $contactApiBearer = $value;
+    break;
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="de" data-theme="dark">
 <head>
@@ -5,12 +36,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt – Florian</title>
   <meta name="description" content="Kontaktformular – schreib Florian eine Nachricht.">
+  <meta name="contact-api-bearer" content="<?php echo htmlspecialchars($contactApiBearer, ENT_QUOTES, 'UTF-8'); ?>">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
 </head>
 <body>
 
-<!-- Header -->
+
 <header>
   <div class="wrap">
     <div class="header-logo">
@@ -35,18 +67,18 @@
       <h1 class="page-title" data-en="Contact" data-de="Kontakt">Kontakt</h1>
     </div>
 
-    <!-- Intro -->
+    
     <p class="contact-intro" style="margin-bottom:2rem;" data-i18n="contact_intro">
       Du hast eine Frage an mich oder möchtest mich wegen einer meiner Projekte kontaktieren, dann kannst du das hier tun!
     </p>
 
-    <!-- Contact form -->
+    
     <div class="contact-form-wrap" style="margin-top:2rem;">
       <h3 data-i18n="contact_form_title">Nachricht senden</h3>
       <div id="form-alert" class="form-alert" role="alert" aria-live="polite"></div>
 
       <form class="form" id="contact-form" novalidate>
-        <!-- Honeypot spam protection -->
+        
         <div class="hp-field" aria-hidden="true">
           <input type="text" name="website" tabindex="-1" autocomplete="off">
         </div>
@@ -112,7 +144,7 @@
       </form>
     </div>
 
-  </div><!-- /wrap -->
+  </div>
 </main>
 
 <footer>

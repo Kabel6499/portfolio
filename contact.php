@@ -4,14 +4,89 @@ declare(strict_types=1);
 
 header('Content-Type: application/json; charset=UTF-8');
 
-/* ---- Only accept POST ----------------------------------------- */
+
+function loadEnvFile(string $envFile): array
+{
+  if (!file_exists($envFile)) {
+    return [];
+  }
+
+  $env = [];
+  foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+    $line = trim($line);
+    if ($line === '' || str_starts_with($line, '#') || !str_contains($line, '=')) {
+      continue;
+    }
+
+    [$key, $value] = explode('=', $line, 2);
+    $key = trim($key);
+    $value = trim($value);
+
+    if (
+      (str_starts_with($value, '"') && str_ends_with($value, '"')) ||
+      (str_starts_with($value, "'") && str_ends_with($value, "'"))
+    ) {
+      $value = substr($value, 1, -1);
+    }
+
+    $env[$key] = $value;
+    $_ENV[$key] = $value;
+  }
+
+  return $env;
+}
+
+function getAuthorizationHeader(): string
+{
+  $header = $_SERVER['HTTP_AUTHORIZATION'] ?? '';
+  if ($header !== '') {
+    return $header;
+  }
+
+  if (!function_exists('getallheaders')) {
+    return '';
+  }
+
+  $headers = getallheaders();
+  if (!is_array($headers)) {
+    return '';
+  }
+
+  return (string)($headers['Authorization'] ?? $headers['authorization'] ?? '');
+}
+
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     echo json_encode(['success' => false, 'message' => 'Method not allowed.']);
     exit;
 }
 
-/* ---- Load PHPMailer ------------------------------------------- */
+
+$envFile = __DIR__ . '/.env';
+$env = loadEnvFile($envFile);
+if ($env === []) {
+  http_response_code(500);
+  echo json_encode(['success' => false, 'message' => 'Server configuration missing.']);
+  exit;
+}
+
+
+$expectedBearer = $env['CONTACT_API_BEARER'] ?? '';
+if ($expectedBearer === '') {
+  http_response_code(500);
+  echo json_encode(['success' => false, 'message' => 'Server configuration error.']);
+  exit;
+}
+
+$authHeader = getAuthorizationHeader();
+if (!preg_match('/^Bearer\s+(.+)$/i', $authHeader, $matches) || !hash_equals($expectedBearer, trim($matches[1]))) {
+  http_response_code(401);
+  echo json_encode(['success' => false, 'message' => 'Unauthorized.']);
+  exit;
+}
+
+
 $autoload = __DIR__ . '/vendor/autoload.php';
 if (!file_exists($autoload)) {
     http_response_code(500);
@@ -24,14 +99,13 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-/* ---- Honeypot spam protection --------------------------------- */
+
 if (!empty($_POST['website'])) {
-    // Bot caught — pretend success
     echo json_encode(['success' => true]);
     exit;
 }
 
-/* ---- Collect & validate input --------------------------------- */
+
 $name    = trim($_POST['name']    ?? '');
 $email   = trim($_POST['email']   ?? '');
 $subject = trim($_POST['subject'] ?? '');
@@ -55,26 +129,11 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-/* Length limits */
+
 if (mb_strlen($name) > 100 || mb_strlen($subject) > 200 || mb_strlen($message) > 5000) {
     http_response_code(422);
     echo json_encode(['success' => false, 'message' => 'Input too long.']);
     exit;
-}
-
-/* ================================================================
-   Load configuration from /root/portfolio/.env
-   ================================================================ */
-$envFile = '/root/portfolio/.env';
-if (!file_exists($envFile)) {
-    http_response_code(500);
-    echo json_encode(['success' => false, 'message' => 'Server configuration missing.']);
-    exit;
-}
-foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
-    if (str_starts_with(trim($line), '#') || !str_contains($line, '=')) continue;
-    [$key, $value] = explode('=', $line, 2);
-    $_ENV[trim($key)] = trim($value);
 }
 
 define('SMTP_HOST',       $_ENV['SMTP_HOST']       ?? '');
@@ -87,15 +146,15 @@ define('SMTP_ENCRYPTION', ($_ENV['SMTP_PORT'] ?? 587) == 465
 define('MAIL_FROM',       $_ENV['MAIL_FROM']       ?? '');
 define('MAIL_FROM_NAME',  $_ENV['MAIL_FROM_NAME']  ?? 'Portfolio Contact');
 define('MAIL_TO',         $_ENV['MAIL_TO']         ?? '');
-/* ================================================================ */
 
-/* ---- Sanitize for HTML output --------------------------------- */
+
+
 $safeName    = htmlspecialchars($name,    ENT_QUOTES, 'UTF-8');
 $safeEmail   = htmlspecialchars($email,   ENT_QUOTES, 'UTF-8');
 $safeSubject = htmlspecialchars($subject, ENT_QUOTES, 'UTF-8');
 $safeMessage = nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8'));
 
-/* ---- Build email body ----------------------------------------- */
+
 $htmlBody = <<<HTML
 <!DOCTYPE html>
 <html lang="de">
@@ -131,11 +190,11 @@ HTML;
 
 $plainBody = "Name: {$name}\nEmail: {$email}\nSubject: {$subject}\n\n{$message}";
 
-/* ---- Send via PHPMailer --------------------------------------- */
+
 try {
     $mail = new PHPMailer(true);
 
-    /* Server settings */
+    
     $mail->isSMTP();
     $mail->Host       = SMTP_HOST;
     $mail->SMTPAuth   = true;
@@ -145,12 +204,12 @@ try {
     $mail->Port       = SMTP_PORT;
     $mail->CharSet    = PHPMailer::CHARSET_UTF8;
 
-    /* Recipients */
+    
     $mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
     $mail->addAddress(MAIL_TO);
     $mail->addReplyTo($email, $name);
 
-    /* Content */
+    
     $mail->isHTML(true);
     $mail->Subject = "Portfolio: {$subject}";
     $mail->Body    = $htmlBody;
